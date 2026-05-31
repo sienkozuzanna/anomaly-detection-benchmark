@@ -13,14 +13,12 @@ os.makedirs(ODDS_CSV_DIR, exist_ok=True)
 os.makedirs(CLUSTERING_BENCHMARK_CSV_DIR, exist_ok=True)
 
 CLUSTERING_BENCHMARK_DATASETS = [
-    ("wut", "mk2", 0),
-    ("sipu", "aggregation", 0),
-
-    ("wut", "smile", 0), 
-    ("sipu", "spiral", 0),
-
-    ("graves", "ring_outliers", 1),
-    ("other", "chameleon_t8_8k", 0),
+    ("graves", "ring_outliers",   1),
+    ("graves", "zigzag_outliers", 1),
+    ("graves", "fuzzyx",          1),
+    ("wut",    "x2",              1),
+    ("fcps",   "target",          1),
+    ("sipu",   "flame",           1),
 ]
 
 def convert_mat_to_csv():
