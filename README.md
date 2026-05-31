@@ -19,17 +19,17 @@ src/
 ├── utils.py                  # Plotting helpers, load_results_csv
 └── visualization.py          # Per-dataset plots (ROC, score dist, scatter)
 
-01_performance_evaluation.ipynb   # Section 3 — compare all methods across datasets
-02_hyperparameter_analysis.ipynb  # Section 4 — hyperparameter sweeps
-03_robustness_analysis.ipynb      # Section 5 — dimensionality, sample size, local vs global
-04_discussion.ipynb               # Section 7 — strengths, weaknesses, conclusions
-05_verification_task.ipynb        # Section 8 — ensemble prediction on test_data.csv
+01_performance_evaluation.ipynb   # compare all methods across datasets
+02_hyperparameter_analysis.ipynb  # hyperparameter sweeps
+03_robustness_analysis.ipynb      # dimensionality, sample size, local vs global
+04_discussion.ipynb               # strengths, weaknesses, conclusions
+05_verification_task.ipynb        # ensemble prediction on test_data.csv
 
 results/
 ├── performance/<dataset>/        # results.csv + plots per dataset
 └── hyperparameters/<algo>/       # sweep CSVs per algorithm
 
-test_data.csv                     # Unlabelled test set (3443 × 21)
+test_data.csv                     # Unlabelled test set (3443 x 21)
 test_labels.csv                   # Final predictions (class: 0/1)
 ```
 
